@@ -1,14 +1,17 @@
 import Image from "next/image"
+
 import { notFound } from "next/navigation"
 import projects from "../../../data/projects.json"
 
+
 interface ProjectPageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 
-export default function Project({ params }: ProjectPageProps) {
-  const project = projects.find((p) => p.id === Number(params.id));
+export default async function Project({ params }: ProjectPageProps) {
+  const { id } = await params;
+  const project = projects.find((p) => p.id === Number(id));
 
   if (!project) {
     notFound()
