@@ -9,7 +9,7 @@ interface ProjectParams {
 }
 
 export default function Project({ params }: ProjectParams) {
-  const project = projects.find((p) => p.id === Number(params.id))
+  const project = projects.find((p) => p.id === Number.parseInt(params.id))
 
   if (!project) {
     notFound()
