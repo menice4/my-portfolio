@@ -45,7 +45,7 @@ export default async function Project({ params }: ProjectPageProps) {
 
       <div>
         <h2 className="text-xl font-semibold mb-2">Project Description:</h2>
-        <p className="text-gray-700">{project.description}</p>
+        <p className="text-gray-700">{project.descriptionFull}</p>
       </div>
     </div>
   )

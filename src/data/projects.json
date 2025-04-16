@@ -1,37 +1,13 @@
 [
     {
       "id": 1,
-      "title": "E-commerce Website",
+      "title": "Quizmania",
       "category": "Web",
-      "tech": ["React", "Next.js", "TypeScript"],
+      "tech": ["React", "Node.js", "TypeScript", "CSS","Supabase OAuth","socket.io", "render", "Express"],
       "image": "/placeholder.svg?height=300&width=400",
-      "description": "This is a description of the project"
-    },
-    {
-      "id": 2,
-      "title": "VR Game",
-      "category": "Game",
-      "tech": ["Unreal Engine", "C++", "VR"],
-      "image": "/placeholder.svg?height=300&width=400",
-       "description": "This is a description of the project"
+      "description": "A multiplayer web based quiz website where you can compete on your own or with your friends by answering questions and scoring points.",
+      "descriptionFull":"",
+      "link": "https://quizmania.vercel.app/"
       
-    },
-    {
-      "id": 3,
-      "title": "AR Mobile App",
-      "category": "Mobile",
-      "tech": ["React Native", "AR Kit", "TypeScript"],
-      "image": "/placeholder.svg?height=300&width=400",
-       "description": "This is a description of the project"
-      
-    },
-    {
-      "id": 4,
-      "title": "3D Character Model",
-      "category": "3D",
-      "tech": ["Blender", "Substance Painter"],
-      "image": "/placeholder.svg?height=300&width=400",
-      "description": "This is a description of the project"
     }
-    
   ]

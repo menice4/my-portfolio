@@ -6,6 +6,7 @@ interface Project {
   title: string
   category: string
   tech: string[]
+  description: string
   image: string
 }
 
@@ -27,11 +28,15 @@ export function ProjectCard({ project }: { project: Project }) {
         <p className="text-gray-600 mb-2">Category: {project.category}</p>
         <div className="flex flex-wrap gap-2">
           {project.tech.map((tech) => (
-            <span key={tech} className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-sm">
-              {tech}
-            </span>
+            <div key={tech}>
+              <span className="bg-gray-200 text-gray-700 px-2 py-1 rounded text-sm">
+                {tech}
+              </span>
+            </div>
+            
           ))}
         </div>
+        <p className="text-gray-700 text-sm mt-2">{project.description}</p>
       </div>
     </Link>
   )
